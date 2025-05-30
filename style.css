@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding-top: 80px;
+}
+.sign-in{
+
+  background-color: red; 
+  color: white;               
+  font-size: 14px; 
+  height: 45px;  
+  width: 70px;         
+  padding: 0;        
+  border: none;             
+  border-radius: 4px;         
+  cursor: pointer;
+   
+}
+
+.sign-in:hover {
+  background-color: #0056b3; 
+}
+
+    header{
+    display: flex;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #ffffff;
+  
+    
+    
+    
+    
+}
+
+
+
+.logo_container{
+    margin-left: 4%;
+    
+    
+    
+}
+
+
+.action_bar{
+    margin-right: 4%;
+}
+.nav_bar{
+    display: flex;
+    min-width: 500px;
+    justify-content: space-between;
+    color: #ffffff;
+    
+}
+.nav_bar a{
+    font-size: 14px;
+    letter-spacing: .3px;
+    color:#ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 30px 0;
+    
+    
+    
+
+}
+.nav_bar a:hover{
+    border-bottom: 4px solid red;
+    
+}
+
+
+
+
+
+.search_bar{
+    height: 40px;
+    min-width: 400px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    
+    
+
+
+}
+.search_icon{
+    height:20px;
+    padding: 10px;
+    box-sizing: content-box;
+    background-color: #f5f5f6;
+    color: #282c3f;
+    font-weight: 300;
+    border-radius: 4px 0 0 4px;
+
+
+
+}
+.search_input{
+    background-color: #f5f5f6;
+    color:#696e79;
+    flex-grow: 1;
+    height:40px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+
+
+}
+
+    
+    
+
+.hamburger{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: auto;
+}
+@media(max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav_bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+  }
+
+  .ham:checked + .hamburger + .nav_bar {
+    display: flex;
+  }
+
+  .search_bar,
+  .action_container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+}
+main{
+  background-color: black;
+}
+.intro {
+  
+  background:url(https://c4.wallpaperflare.com/wallpaper/849/749/222/5bd1dd7bc4d4a-wallpaper-preview.jpg); 
+  background-size:cover;
+  height: 660px;
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+  padding: 50px;
+
+  color: black;
+  
+}
+
+.intro-l {
+  flex: 1;
+  max-width: 50%;
+}
+
+.intro-l h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.intro-left p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+ background-color: red;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.btn:hover {
+  background-color: blue;
+}
+.category_heading{
+    text-transform: uppercase;
+    color: red;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 720;
+    background-color: black;
+    text-shadow: 0 0 10px red,0 0 20px red;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow{
+  from {
+    text-shadow: 0 0 5px red;
+  }
+  to{
+    text-shadow: 0 0 2px,0 0 30px yellow;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.movie-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.movie-card {
+  position: relative;
+  width: 220px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 15px;
+  position: relative;
+  text-align: left;
+}
+
+.movie-info h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.movie-info p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.duration {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 12px;
+  color: #eee;
+}
+
+.hover-actions {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.movie-card:hover .hover-actions {
+  opacity: 1;
+}
+
+.watch-btn {
+  background: #e50914;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+
+  
+}
+.pop{
+   text-transform: uppercase;
+    color: red;
+    letter-spacing: .15em;
+    font-size: 1.4em;
+    margin-left: 0;
+    padding-left: 0;
+    max-height: 3em;
+    font-weight: 420;
+    background-color: black;
+    animation: pulsecolor 2s infinite;
+    
+}
+@keyframes pulsecolor{
+  0%{color: blue;}
+  50%{color: green;}
+  75%{color: orange;}
+  60%{color: aqua;}
+  100%{color: yellow;}
+}
+
+  
+
+.shows-grid {
+  display: flex;
+  
+  gap: 10px;
+  
+  
+}
+
+.show-card {
+  background: #1e1e1e;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.show-card:hover {
+  transform: scale(1.02);
+}
+
+.cover {
+  width: 100%;
+  height: 200px;
+  object-position: center;
+}
+
+.info {
+  padding: 15px;
+}
+
+.info h3 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.genre, .sea {
+  color: #aaa;
+  font-size: 0.7em;
+}
+
+.about {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 15px;
+  background:red;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.user-reviews {
+  padding: 60px 30px;
+  background: peachpuff;
+  color: #333;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.reviews-container {
+  display: flex;
+
+  gap: 40px;
+  justify-content: center;
+}
+
+.review-cards {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+
+
+
+
+
+
+
+
+.review-form {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.review-form h3 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.review-form button {
+  background-color: red;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.review-form button:hover {
+  background-color: lightgreen;
+}
+#trending-movies{
+  scroll-margin-top: 80px;
+}
+#popular-shows{
+  scroll-margin-top: 80px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: sans-serif;
+}
+
+.social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social a:hover {
+  color: #1da1f2; 
+  transform: scale(1.2);
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: skyblue;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #666;
+  color: white;
+}
+

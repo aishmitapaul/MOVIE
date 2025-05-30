@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>MOVIE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+<style>
+    .animate{
+        width: 200px;
+        animation: rotate 2s linear infinite;
+    }
+    @keyframes rotate{
+        from{
+        transform: rotate(0deg);
+
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+   
+    </style>
+    </head>
+
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="#"><img class="movie" src="mo.png" alt="MOVIES" style="width: 90px;height: 80px;"></a>
+        </div>
+        <div id="ham" class="ham">
+        <label for="ham" class="hamburger">HAM</label>
+        </div>
+        <nav class="nav_bar">
+       
+          
+                <a href="#trending-movies">TRENDING MOVIES</a>
+              
+        
+                <a href="#popular-shows">POPULAR SHOWS</a>
+           <a href="#">NEWS</a>
+            <a href="#">SPORTS</a>
+        
+</nav>
+        
+        <div class="search_bar">
+            <span class="material-symbols-outlined search_icon">
+search
+</span>
+       <input class="search_input" placeholder="Search for your kind of entertainment">
+
+        </div>
+        <div class="action_bar">
+            <div class="action_container">
+                <label for="languages">Choose a language:</label>
+                <select id="languages" name="languages">
+                    <option value="english">ENGLISH</option>
+                    <option value="hindi">HINDI</option>
+                </select>
+                
+                    <span class="action_name"></span>
+                </span>
+                
+            </div>
+        </div>
+        <button class="sign-in">Sign In</button>
+         
+  </header>
+    <hr>
+    <main>
+        <section class="intro">
+        <div class="intro-l">
+    <h1>FlixZone</h1>
+    <h4>Fuel Your Screen Addiction!</h4>
+    <a href="#trending" class="btn">Explore Trending Movies</a>
+  </div>
+  <img src="pop.svg" alt="Movie" class="animate">
+    
+    </section><hr>
+       
+    <div class="category_heading">
+        <h2 id="trending-movies">TRENDING MOVIES</h2>
+        <h4>🔥Catch the exciting blockbusters lighting up the screen now!</h4>
+    </div>
+        <div class="movie-grid">
+    <div class="movie-card">
+      <img src="1.jpg" alt="Movie 1" />
+    
+      <div class="movie-info">
+        <h4>Saunkan Saunkne</h4>
+        <p>Amusing,melodramatic and endearing.</p>
+        <span class="duration">2h 22m</span>
+        
+      </div>
+      <div class="hover-actions">
+        <a href="https://youtu.be/XdrjrfqZ5yk" target="_blank" class="watch-btn">Watch Now</a>
+        <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+        
+        </div>
+        </div>
+        <div class="movie-card">
+         <img src="2.jpg" alt="Movie 2" />
+      <div class="movie-info">
+        <h4>Housefull 5</h4>
+        <p>Comedy Thriller movie.</p>
+        <span class="duration">2h 30m</span>
+      </div>
+      <div class="hover-actions">
+        <a href="https://youtu.be/xGQuT1wm2qk" target="_blank" class="watch-btn">Watch Now</a>
+        <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+        </div>
+        </div>
+         <div class="movie-card">
+         <img src="7.jpg" alt="Movie 3" />
+      <div class="movie-info">
+        <h4>Sinners</h4>
+        <p>Thrilling,Violent and Terrifying movie.</p>
+        <span class="duration">2h 50m</span>
+      </div>
+      <div class="hover-actions">
+        <a href="https://youtu.be/nLtiLI6HIZI" target="_blank" class="watch-btn">Watch Now</a>
+        <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+        
+        </div>
+         </div>
+         <div class="movie-card">
+         <img src="4.jpg" alt="Movie 4" />
+      <div class="movie-info">
+        <h4>Odela2</h4>
+        <p>How a rapist's ghost attacks women.</p>
+        <span class="duration">2h 35m</span>
+      </div>
+      <div class="hover-actions">
+        <a href="https://youtu.be/AyZRucVQBM8" target="_blank" class="watch-btn">Watch Now</a>
+        <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+        
+        </div>
+         </div>
+         <div class="movie-card">
+         <img src="8.jpg" alt="Movie 5" />
+      <div class="movie-info">
+        <h4>Thug life</h4>
+        <p>Gangster's Return.</p>
+        <span class="duration">2h 45m</span>
+      </div>
+      <div class="hover-actions">
+        <a href="https://youtu.be/dbBpL3I9XBM" target="_blank" class="watch-btn">Watch Now</a>
+        <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+        </div>
+         </div>
+         <div class="movie-card">
+         <img src="9.jpg" alt="Movie 6" />
+      <div class="movie-info">
+        <h4>Kingdom</h4>
+        <p>Bombing of the khobar housing complex .</p>
+        <span class="duration">2h 14m</span>
+      </div>
+      <div class="hover-actions">
+        <a href="https://youtu.be/u3xdpN7hBYY" target="_blank" class="watch-btn">Watch Now</a>
+        <button class="watchlist-btn" onclick="toggleWatchlist(this)">+</button>
+        
+      </div>
+      </div>
+<div class="pop">
+        <h2 id="popular-shows">🌟POPULAR SHOWS</h2>
+  <h4>These series are setting screens on fire! Binge-worthy entertainment awaits!📺</h4></div>
+  
+
+  <div class="shows-grid">
+
+    
+    <div class="show-card">
+      <img src="42.jpg" alt="Picture" class="cover" />
+      <div class="info">
+        <h3>Mismatched</h3>
+        <p class="genre">Drama • Romance</p>
+        <p class="sea">4 Seasons • 60 Episodes</p>
+        <p class="about">Two teenagers strike up a friendship at their summer programme.</p>
+        <label for="modal1" class="learn-more">Learn More</label>
+        
+      </div>
+    </div>
+    <div class="show-card">
+      <img src="40.jpg" alt="Picture" class="cover" />
+      <div class="info">
+        <h3>Nightfall</h3>
+        <p class="genre">Drama • Mystery</p>
+        <p class="sea">3 Seasons • 30 Episodes</p>
+        <p class="about">A detective’s search for truth leads to secrets more dangerous than murder.</p>
+        <label for="modal1" class="learn-more">Learn More</label>
+      </div>
+    </div>
+    <div class="show-card">
+      <img src="44.jpg" alt="Picture" class="cover" />
+      <div class="info">
+        <h3>Didi Number1</h3>
+        <p class="genre">Drama • Fun</p>
+        <p class="sea">10 Seasons • 200 Episodes</p>
+        <p class="about">A series of fun games are conducted and then the winner is announced.</p>
+        <label for="modal1" class="learn-more">Learn More</label>
+      </div>
+    </div>
+    <div class="show-card">
+      <img src="45.jpg" alt="Picture" class="cover" />
+      <div class="info">
+        <h3>Love</h3>
+        <p class="genre">Drama • LoveStory</p>
+        <p class="sea">2 Seasons • 20 Episodes</p>
+        <p class="about">Enemity between two totally opposite personalities begins a love story.</p>
+        <label for="modal1" class="learn-more">Learn More</label>
+      </div>
+    </div>
+    <div class="show-card">
+      <img src="46.jpg" alt="Picture" class="cover" />
+      <div class="info">
+        <h3>Kerala Crime Files</h3>
+        <p class="genre">Drama • Thriller</p>
+        <p class="sea">3 Seasons • 30 Episodes</p>
+        <p class="about">Torture that the women faces over decades and now revolting back.</p>
+        <label for="modal1" class="learn-more">Learn More</label>
+      </div>
+    </div>
+    <div class="show-card">
+      <img src="41.jpg" alt="Picture" class="cover" />
+      <div class="info">
+        <h3>Saat Pake Badha</h3>
+        <p class="genre">Drama • LoveStory</p>
+        <p class="sea">5 Seasons • 40 Episodes</p>
+        <p class="about">lovestory of two married couple and how they adjust among themselves.</p>
+        <label for="modal1" class="learn-more">Learn More</label>
+      </div>
+    </div>
+</div>
+
+
+<section class="user-reviews">
+  <h2 class="section-title">User Reviews</h2>
+  <p class="section-subtitle">See what our audience has to say and share your own experience!</p>
+
+  <div class="reviews-container">
+    
+    
+    <div class="review-cards">
+      <div class="review-card">
+        <img src="50.jpg" alt="User 1">
+        <div>
+          <h4>Ravi Sharma</h4>
+          <p>"Absolutely loved the latest releases. The UI is slick and easy to navigate!"</p>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <img src="51.jpg" alt="User 2">
+        <div>
+          <h4>Priya Desai</h4>
+          <p>"Great collection of trending movies. Loved the review section idea!"</p>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <img src="53.jpg" alt="User 3">
+        <div>
+          <h4>Arjun Mehta</h4>
+          <p>"This platform is my go-to for movie recommendations. Keep it up!"</p>
+        </div>
+        <div class="review-card">
+        <img src="54.jpg" alt="User 4">
+         <div>
+          <h4>Anil Grover</h4>
+          <p>"This platform is my go-to for movie recommendations. Keep it up!"</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="review-form">
+      <h3>Submit Your Review</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Write your review here..." required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+  
+<footer class="footer">
+  <div class="social">
+    <a href="https://www.facebook.com/share/15X4XQXGdb/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/aishmita._.paul/profilecard/?igsh=MWpleDJrcThnYTdpOQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/aishmita-paul-2b8093208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <div class="footer-links">
+    <a href="https://brand.netflix.com/en/terms/">Terms & Conditions</a>
+    <a href="https://help.netflix.com/en/node/100628">Privacy Policy</a>
+  </div>
+
+  <a href="#top" class="back-to-top">Back to Top</a>
+</footer>
+
